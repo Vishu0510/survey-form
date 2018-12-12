@@ -19,7 +19,33 @@
 			<form id="survey-form">
 				<label id="name-label" for="name">Name:</label> <input type="text" id="name" placeholder="Please Enter Your Name Here"> <br>
 				<label id="email-label" for="email">Email:</label><input type="email" id="email" placeholder="Please Enter Your E-mail Here"> <br>
-				<label id="number-label" for="number">Age:</label><input type="number" id="number" min="5" max="120" placeholder="Please Enter Your Age Here">
+				<label id="number-label" for="number">Age:</label><input type="number" id="number" min="5" max="120" placeholder="Please Enter Your Age Here"><br>
+				<label id="dropdown-label" for="dropdown">Please select the Operating System of your smartphone:</label>
+				<select id="dropdown">
+					<option value="ios">IOS</option>
+					<option value="android">Android</option>
+					<option value="windows">Windows</option>
+				</select>
+				<br>
+				<label id="radio-label" for="budget"> Please select your budget when buying a phone: </label>
+				<br>
+				<input type="radio" name="budget"> 0-200 USD <br>
+				<input type="radio" name="budget"> 200-400 USD <br>
+				<input type="radio" name="budget"> 400-600 USD <br>
+				<input type="radio" name="budget"> 600-800 USD <br>
+				<input type="radio" name="budget"> 800-1000 USD <br>
+				<input type="radio" name="budget"> +1000 USD <br>
+				<label id="checkbox-label" for="brand">Please check the smartphones brands you have used:</label>
+				<br>
+				<input type="checkbox" name="brand" value="1"> Samsung <br>
+				<input type="checkbox" name="brand" value="2"> Apple <br>
+				<input type="checkbox" name="brand" value="3"> Nokia <br>
+				<input type="checkbox" name="brand" value="4"> Sony<br>
+				<input type="checkbox" name="brand" value="5"> HTC <br>
+				<input type="checkbox" name="brand" value="6"> LG <br>
+				<label id="textarea-label" for="comment">Please leave some comments/suggestions for us below.</label><br>
+				<textarea id="comment" rows="8" cols="50" placeholder="Enter your comments here..."></textarea><br>
+				<input id="submit" type="submit">
 			</form>
 		</main>
 
