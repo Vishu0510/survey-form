@@ -3,9 +3,39 @@
 
 	<head>
 		<style type="text/css" media="screen">
-			
-		</style>
 
+			body{
+				background-color:#a9d7d1;
+			}
+
+			header{
+				text-align: center;
+			}
+
+			form{
+				background-color:rgba(250, 250, 250, 1);
+				max-width:60%;
+				position:relative;
+				left:20%;
+				border-radius:10px;
+				line-height: 50px;
+				padding-top:10px;
+				padding-bottom:15px;
+				text-align: center;
+			}
+
+			.left{
+				float:left;
+				margin-left: 15px;
+			}
+
+			.input{
+				width: 250px;
+				border: 1px solid black;
+			}
+
+		</style>
+		
 		<title>FCC Survey Form</title>
 	</head>
 
@@ -17,9 +47,9 @@
 
 		<main>
 			<form id="survey-form">
-				<label id="name-label" for="name">Name:</label> <input type="text" id="name" placeholder="Please Enter Your Name Here" required> <br>
-				<label id="email-label" for="email">Email:</label><input type="email" id="email" placeholder="Please Enter Your E-mail Here" required> <br>
-				<label id="number-label" for="number">Age:</label><input type="number" id="number" min="5" max="120" placeholder="Please Enter Your Age Here"><br>
+				<label id="name-label" for="name">Name:</label> <input type="text" id="name" class="input" placeholder="Please Enter Your Name Here" required> <br>
+				<label id="email-label" for="email">Email:</label><input type="email" id="email" class="input" placeholder="Please Enter Your E-mail Here" required> <br>
+				<label id="number-label" for="number">Age:</label><input type="number" id="number" class="input" min="5" max="120" placeholder="Please Enter Your Age Here"><br>
 				<label id="dropdown-label" for="dropdown">Please select the Operating System of your smartphone:</label>
 				<select id="dropdown">
 					<option value="ios">IOS</option>
@@ -27,22 +57,26 @@
 					<option value="windows">Windows</option>
 				</select>
 				<br>
-				<label id="radio-label" for="budget"> Please select your budget when buying a phone: </label>
-				<br>
-				<input type="radio" name="budget" value="1"> 0-200 USD <br>
-				<input type="radio" name="budget" value="2"> 200-400 USD <br>
-				<input type="radio" name="budget" value="3"> 400-600 USD <br>
-				<input type="radio" name="budget" value="4"> 600-800 USD <br>
-				<input type="radio" name="budget" value="5"> 800-1000 USD <br>
-				<input type="radio" name="budget" value="6"> +1000 USD <br>
-				<label id="checkbox-label" for="brand">Please check the smartphones brands you have used:</label>
-				<br>
-				<input type="checkbox" name="brand" value="1"> Samsung <br>
-				<input type="checkbox" name="brand" value="2"> Apple <br>
-				<input type="checkbox" name="brand" value="3"> Nokia <br>
-				<input type="checkbox" name="brand" value="4"> Sony<br>
-				<input type="checkbox" name="brand" value="5"> HTC <br>
-				<input type="checkbox" name="brand" value="6"> LG <br>
+
+				<label id="radio-label" class="left" for="budget"> Please select your budget when buying a phone: </label><br>
+				<div class="right">
+					<input type="radio" name="budget" value="1"> 0-200 USD <br>
+					<input type="radio" name="budget" value="2"> 200-400 USD <br>
+					<input type="radio" name="budget" value="3"> 400-600 USD <br>
+					<input type="radio" name="budget" value="4"> 600-800 USD <br>
+					<input type="radio" name="budget" value="5"> 800-1000 USD <br>
+					<input type="radio" name="budget" value="6"> +1000 USD <br>
+			    </div>
+
+				<label id="checkbox-label" class="left" for="brand">Please check the smartphones brands you have used:</label><br>
+				<div class="right">		
+					<input type="checkbox" name="brand" value="1"> Samsung <br>
+					<input type="checkbox" name="brand" value="2"> Apple <br>
+					<input type="checkbox" name="brand" value="3"> Nokia <br>
+					<input type="checkbox" name="brand" value="4"> Sony<br>
+					<input type="checkbox" name="brand" value="5"> HTC <br>
+					<input type="checkbox" name="brand" value="6"> LG <br>
+				</div>
 				<label id="textarea-label" for="comment">Please leave some comments/suggestions for us below.</label><br>
 				<textarea id="comment" rows="8" cols="50" placeholder="Enter your comments here..."></textarea><br>
 				<input id="submit" type="submit">
